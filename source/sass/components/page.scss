@@ -1,0 +1,19 @@
+@use "../variables" as var;
+@use "../mixins";
+
+.page {
+  @include mixins.font;
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  width: var.$desktop-width;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.page__main {
+  flex-grow: 1;
+}
