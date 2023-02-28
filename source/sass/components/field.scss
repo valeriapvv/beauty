@@ -1,0 +1,31 @@
+@use "../variables" as var;
+
+.field {
+  min-width: 225px;
+  margin: 0;
+  padding: 7px 25px;
+
+  font: inherit;
+  line-height: 1.2;
+  color: var.$color-basic-dark;
+
+  border: 2px solid transparent;
+  border-radius: 40px;
+  background-color: #ffffff;
+  outline: none;
+
+  transition: all 0.1s;
+
+  &:hover {
+    background-color: var.$color-basic-gray;
+  }
+
+  &:focus {
+    border-color: rgba(var.$color-basic-accent, 0.5);
+    background-color: #ffffff;
+  }
+
+  &::placeholder {
+    color: var.$color-gray-rare-1;
+  }
+}

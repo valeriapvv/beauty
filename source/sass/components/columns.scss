@@ -1,0 +1,44 @@
+@use "../variables" as var;
+
+$-mail-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' fill-opacity='.4' viewBox='0 0 140 108'%3E%3Cpath d='M122.9.73H17.13A17.13 17.13 0 0 0 0 17.85v72.3c0 9.44 7.68 17.12 17.12 17.12h105.76c9.44 0 17.12-7.68 17.12-17.12V17.88A17.12 17.12 0 0 0 122.9.73Zm9.3 89.42c0 5.13-4.16 9.3-9.3 9.3H17.13a9.3 9.3 0 0 1-9.3-9.3V17.88a9.3 9.3 0 0 1 9.3-9.3h105.76c5.13 0 9.3 4.17 9.3 9.3v72.27h.03Z'/%3E%3Cpath d='m88.3 53.1 34.23-30.7a3.93 3.93 0 0 0 .3-5.54 3.93 3.93 0 0 0-5.54-.29L70.07 58.95l-9.2-8.22a5.79 5.79 0 0 0-.7-.64L22.68 16.54a3.9 3.9 0 0 0-5.53.32 3.9 3.9 0 0 0 .32 5.54L52.1 53.36l-34.5 32.3a3.93 3.93 0 0 0 5.36 5.74L58 58.63l9.5 8.5a3.9 3.9 0 0 0 5.22-.04l9.76-8.74 34.82 33.08a3.9 3.9 0 1 0 5.39-5.68L88.29 53.1Z'/%3E%3C/svg%3E%0A");
+$-content-horizontal-padding: 35px;
+$-text-margin-bottom: 25px;
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var.$grid-gap-default;
+}
+
+.columns__content {
+  padding: $-content-horizontal-padding 40px;
+  padding-right: 210px;
+  color: #ffffff;
+  background-color: var.$color-basic-accent;
+
+  &--subscribe {
+    background-image: $-mail-icon;
+    background-repeat: no-repeat;
+    background-size: 140px 108px;
+    background-position: right $-content-horizontal-padding center;
+  }
+}
+
+.columns__title {
+  margin: 0;
+  margin-bottom: $-text-margin-bottom;
+
+  font-size: 1.29rem;
+  line-height: 1.68;
+}
+
+.columns__text {
+  max-width: 232px;
+  margin: 0;
+  margin-bottom: $-text-margin-bottom;
+}
+
+.columns__link {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}

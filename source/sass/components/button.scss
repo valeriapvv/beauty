@@ -10,16 +10,19 @@ $-text-color-secondary: #ffffff;
   padding: 10px 27px;
 
   font-family: inherit;
-  color: $-text-color-default;
+  line-height: 1.2;
   text-align: center;
   word-wrap: break-word;
+  color: $-text-color-default;
 
   border-radius: 40px;
   border: 2px solid var.$color-basic-accent;
   background-color: transparent;
 
   transition: all 0.1s;
+
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     color: rgba($-text-color-default, 0.5);
