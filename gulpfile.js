@@ -48,10 +48,16 @@ const scripts = () => {
 
 // Images
 
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}', {base: 'source/img'})
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
+}
+
+export const optimizeSourceImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}', {base: 'source/img'})
+    .pipe(squoosh())
+    .pipe(gulp.dest('source/img'))
 }
 
 const copyImages = () => {

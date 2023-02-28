@@ -33,20 +33,17 @@
         </li>
       </ul>
     </div>
-
     <div class="header__row centralizer">
       <a class="header__logo" href="#">
         <svg width="258" height="80">
           <use href="img/sprite.svg#logo" />
         </svg>
       </a>
-
       <div class="header__call-back call-back">
         <a class="call-back__number" href="tel:88121234567">8 (812) 123-45-67</a>
-        <a class="button button--secondary" href="#" >Обратный звонок</a>
+        <a class="button" href="#" >Обратный звонок</a>
       </div>
     </div>
-
     <nav class="header__navigation navigation">
       <ul class="navigation__list centralizer">
         <li class="navigation__item">
@@ -70,8 +67,24 @@
       </ul>
     </nav>
   </header>
-  <main class="page__main">
+  <main class="page__main main">
     <h1 class="visually-hidden">Парикмахерские кресла от &#171;Beauty&#187;</h1>
+    <section class="promo">
+      <div class="promo__container centralizer">
+        <div class="promo__content">
+          <h2 class="promo__title">Супер кресло</h2>
+          <p class="promo__text">Текст акции всегда отражает суть, а не просто болтовню, поэтому внимательнее</p>
+          <a class="promo__link button button--secondary" href="#" title="Перейти на страницу с подробностями">Подробнее</a>
+        </div>
+        <div class="promo__image-container">
+          <picture>
+            <source type="image/webp" srcset="img/desktop/banner-chair.webp 1x, img/desktop/banner-chair@2x.webp 2x">
+            <img class="promo__image" src="img/desktop/banner-chair.png" width="584" height="584" alt="Парикмахерское кресло."
+            srcset="img/desktop/banner-chair@2x.png 2x">
+          </picture>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer"></footer>
 </body>

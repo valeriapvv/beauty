@@ -29,7 +29,9 @@ $-text-color-secondary: #ffffff;
   }
 
   &--secondary {
+    letter-spacing: 0.05em;
     color: $-text-color-secondary;
+
     border-color: #ffffff;
     background-color: var.$color-basic-accent;
 

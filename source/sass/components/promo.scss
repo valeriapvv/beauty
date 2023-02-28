@@ -1,0 +1,65 @@
+@use "../variables" as var;
+
+.promo {
+  color: #ffffff;
+  background-color: var.$color-basic-accent;
+  overflow: hidden;
+}
+
+.promo__container {
+  display: grid;
+  grid-template-columns: 410px 1fr;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 48px;
+  line-height: 1.35;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 15px;
+  max-width: 310px;
+}
+
+.promo__link {
+  margin-top: 35px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.promo__image-container {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+
+  &::before {
+    width: 860px;
+    height: 860px;
+  }
+
+  &::after {
+    width: 680px;
+    height: 680px;
+    opacity: 0.4;
+  }
+}
+
+.promo__image {
+  position: relative;
+  z-index: 1;
+}
