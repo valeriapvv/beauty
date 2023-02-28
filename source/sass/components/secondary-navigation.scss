@@ -1,0 +1,28 @@
+@use "../variables" as var;
+@use "../mixins";
+
+.secondary-navigation {
+  line-height: 1.42;
+  color: var.$color-basic-dark;
+  background-color: var.$color-basic-gray;
+}
+
+.secondary-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.secondary-navigation__link {
+  display: block;
+  padding: 17px 15px;
+  max-width: 170px;
+
+  color: inherit;
+  word-wrap: break-word;
+
+  @include mixins.interactive-text;
+}

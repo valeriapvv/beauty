@@ -1,4 +1,4 @@
-@use "variables.scss" as var;
+@use "variables" as var;
 
 @mixin list-style-reset {
   margin: 0;
@@ -14,4 +14,22 @@
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
+}
+
+@mixin centralizer {
+  margin: 0 auto;
+  padding-left: var.$base-horizontal-padding;
+  padding-right: var.$base-horizontal-padding;
+}
+
+@mixin interactive-text {
+  transition: opacity 0.1s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }

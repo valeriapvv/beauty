@@ -1,0 +1,44 @@
+@use "../variables" as var;
+
+$-text-color-default: #000000;
+$-text-color-secondary: #ffffff;
+
+.button {
+  display: inline-block;
+  max-width: 300px;
+  margin: 0;
+  padding: 10px 27px;
+
+  color: $-text-color-default;
+  text-align: center;
+  word-wrap: break-word;
+
+  border-radius: 40px;
+  border: 2px solid var.$color-basic-accent;
+  background-color: transparent;
+
+  transition: all 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($-text-color-default, 0.5);
+  }
+
+  &:active {
+    color: rgba($-text-color-default, 0.7);
+  }
+
+  &--secondary {
+    color: $-text-color-secondary;
+    border-color: #ffffff;
+    background-color: var.$color-basic-accent;
+
+    &:hover {
+      color: rgba($-text-color-secondary, 0.5);
+    }
+
+    &:active {
+      color: rgba($-text-color-secondary, 0.7);
+    }
+  }
+}
