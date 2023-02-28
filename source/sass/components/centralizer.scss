@@ -3,7 +3,6 @@
 
 .centralizer {
   width: var.$desktop-width;
-  max-width: 100%;
 
   @include mixins.centralizer;
 }

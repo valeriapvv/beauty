@@ -1,0 +1,14 @@
+@use "../variables" as var;
+
+.main-index {
+  padding-bottom: 133px;
+  background-color: var.$color-basic-gray;
+}
+
+.main-index__promo {
+  margin-bottom: 80px;
+}
+
+.main-index__catalog {
+  margin-bottom: 100px;
+}

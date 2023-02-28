@@ -1,0 +1,39 @@
+@use "../variables" as var;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: var.$catalog-card-width;
+  padding: 25px 30px;
+
+  background-color: #ffffff;
+}
+
+.card__image-link {
+  order: -1;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: var.$color-basic-dark;
+}
+
+.card__price {
+  margin-bottom: 20px;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card__button {
+  margin-top: auto;
+  padding: 9px 40px;
+  border: none;
+}
