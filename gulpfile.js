@@ -179,7 +179,7 @@ export const build = gulp.series(
   gulp.parallel(
     html,
     styles,
-    scripts,
+    // scripts,
     svg,
     sprite,
     webp,
