@@ -1,0 +1,49 @@
+@use "../variables" as var;
+@use "../mixins";
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.footer__socials {
+  margin-right: 50px;
+}
+
+.footer__address {
+  max-width: 300px;
+  margin-right: 50px;
+
+  font-style: normal;
+}
+
+.footer__bottom {
+  font-size: 0.86rem;
+  line-height: 1.17;
+  color: var.$color-gray-rare-2;
+
+  background-color: var.$color-basic-gray;
+}
+
+.footer__bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer__copyright {
+  margin: 0;
+  margin-right: 50px;
+}
+
+.footer__policy {
+  color: inherit;
+
+  @include mixins.interactive-text;
+}

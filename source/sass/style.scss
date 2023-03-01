@@ -8,6 +8,7 @@
 @use "components/button";
 @use "components/call-back";
 @use "components/field";
+@use "components/socials";
 
 // page
 @use "components/page";
@@ -29,3 +30,6 @@
 
 // main-index
 @use "components/main-index";
+
+// footer
+@use "components/footer";

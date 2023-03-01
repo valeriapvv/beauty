@@ -1,0 +1,40 @@
+@use "../variables" as var;
+@use "../mixins";
+
+$-social-size: 45px;
+
+.socials {
+  @include mixins.list-style-reset;
+
+  display: grid;
+  grid-template-columns: repeat(4, $-social-size);
+  gap: 10px 20px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: $-social-size;
+  height: $-social-size;
+
+  color: var.$color-basic-accent;
+  border-radius: 50%;
+  border: 2px solid var.$color-basic-accent;
+  outline: none;
+
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    color: #ffffff;
+    background-color: var.$color-basic-accent;
+  }
+
+  &:active {
+    color: var.$color-basic-accent;
+    background-color: transparent;
+    opacity: 0.7;
+  }
+}
