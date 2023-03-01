@@ -19,17 +19,20 @@ $-text-color-secondary: #ffffff;
   border: 2px solid var.$color-basic-accent;
   background-color: transparent;
 
-  transition: all 0.1s;
+  transition: all 0.2s;
 
   cursor: pointer;
   user-select: none;
 
   &:hover {
-    color: rgba($-text-color-default, 0.5);
+    color: $-text-color-secondary;
+    background-color: var.$color-basic-accent;
   }
 
   &:active {
-    color: rgba($-text-color-default, 0.7);
+    color: $-text-color-default;
+    background-color: transparent;
+    opacity: 0.7;
   }
 
   &--secondary {
@@ -40,11 +43,16 @@ $-text-color-secondary: #ffffff;
     background-color: var.$color-basic-accent;
 
     &:hover {
-      color: rgba($-text-color-secondary, 0.5);
+      color: var.$color-basic-accent;
+      border-color: rgba(var.$color-basic-accent, 0.5);
+      background-color: #ffffff;
     }
 
     &:active {
-      color: rgba($-text-color-secondary, 0.7);
+      color: $-text-color-secondary;
+      border-color: #ffffff;
+      background-color: var.$color-basic-accent;
+      opacity: 0.7;
     }
   }
 }
